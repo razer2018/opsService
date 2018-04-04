@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: ops-service
+  devtools:
+    restart:
+      exclude: log/**, front/**
+
+server:
+  port: 8081
+  context-path: /micro
+management:
+  port: 8083
+  context-path: /manage
+ 
+logging:
+  path: log
+
